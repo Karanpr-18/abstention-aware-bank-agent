@@ -47,8 +47,8 @@ def _judge_chat(prompt: str, model_id: str) -> str:
             return r
 
         if provider == "local":
-            identity = os.environ.get("ANTSEED_BUYER_IDENTITY", "project-agent-1")
-            r = _post({"x-antseed-buyer-identity": identity})
+            identity = os.environ.get("ANTSEED_BUYER_IDENTITY", "")
+            r = _post({"x-antseed-buyer-identity": identity} if identity else {})
             if r.status_code == 400 and "unknown_buyer_identity" in r.text:
                 r = _post({})
         else:

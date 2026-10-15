@@ -54,14 +54,10 @@ def _opencode_bin() -> str:
     checked.append(f"PATH-> {found or 'miss'}")
     if found:
         return found
-    # The server may run as a different user (e.g. root) whose $HOME lacks the
-    # binary — also check the project owner's home explicitly.
-    for home in dict.fromkeys([str(Path.home()), "/home/karan"]):
-        cand = str(Path(home) / ".opencode" / "bin" / "opencode")
-        exists = Path(cand).exists()
-        checked.append(f"HOME={home} exists={exists}")
-        if exists:
-            return cand
+    cand = Path.home() / ".opencode" / "bin" / "opencode"
+    checked.append(f"HOME={Path.home()} exists={cand.exists()}")
+    if cand.exists():
+        return str(cand)
     raise HTTPException(500, "opencode binary not found [" + " | ".join(checked) + "]")
 
 # Full gateway-style IDs stay intact here (no CrewAI routing to strip them).

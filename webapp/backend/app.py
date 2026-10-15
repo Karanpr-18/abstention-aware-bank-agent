@@ -66,7 +66,7 @@ def health():
     return {"ok": True, "questions": len(ALL_Q), "batches": len(batches()),
             "groq_key": bool(os.environ.get("GROQ_API_KEY")),
             "gemini_key": bool(os.environ.get("GEMINI_API_KEY")),
-            "buyer_identity": os.environ.get("ANTSEED_BUYER_IDENTITY", "project-agent-1")}
+            "buyer_identity": os.environ.get("ANTSEED_BUYER_IDENTITY", "")}
 
 @app.get("/api/models")
 def models():

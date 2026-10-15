@@ -13,3 +13,7 @@ crewai[google-genai]
 litellm
 pypdf
 cryptography
+fastapi
+uvicorn
+requests
+openpyxl

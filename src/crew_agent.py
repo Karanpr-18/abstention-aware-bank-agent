@@ -22,16 +22,20 @@ from src.tools import check_loan_eligibility as _elig, flag_fraud_report as _fra
 # Model catalog — the ONLY place models are defined. The UI dropdown reads this via /api/models.
 # Code keeps the full gateway ID (name); frontend shows only the short label.
 MODELS = [
+    {"id": "groq/llama-3.3-70b-versatile", "provider": "groq", "name": "llama-3.3-70b-versatile",
+     "label": "Llama 3.3 70B", "hint": "via Groq"},
+    {"id": "gemini/gemini-1.5-flash", "provider": "gemini", "name": "gemini-1.5-flash",
+     "label": "Gemini 1.5 Flash", "hint": "via Google AI Studio"},
+    {"id": "opencode/space-bunny-max", "provider": "opencode", "name": "opencode/space-bunny-free",
+     "label": "Space Bunny", "hint": "via OpenCode · max"},
+    {"id": "opencode/mimo-v2.6", "provider": "opencode", "name": "opencode/mimo-v2.6-flash-free",
+     "label": "Mimo v2.6", "hint": "via OpenCode · max reasoning"},
     {"id": "opencode/muse-spark-1.3-xhigh", "provider": "opencode", "name": "opencode/muse-spark-1.3-contributor-free#xhigh",
      "label": "Muse Spark 1.3", "hint": "via OpenCode · xhigh"},
     {"id": "opencode/ling-3.1-flash", "provider": "opencode", "name": "opencode/ling-3.1-flash-free",
      "label": "Ling 3.1 Flash", "hint": "via OpenCode"},
     {"id": "opencode/nemotron-3-ultra", "provider": "opencode", "name": "opencode/nemotron-3-ultra-free",
      "label": "Nemotron 3 Ultra", "hint": "via OpenCode · lenient judge"},
-    {"id": "opencode/mimo-v2.6", "provider": "opencode", "name": "opencode/mimo-v2.6-flash-free",
-     "label": "Mimo v2.6", "hint": "via OpenCode · max reasoning"},
-    {"id": "opencode/space-bunny-max", "provider": "opencode", "name": "opencode/space-bunny-free",
-     "label": "Space Bunny", "hint": "via OpenCode · max"},
 ]
 DEFAULT_MODEL = "opencode/space-bunny-max"
 BY_MODEL = {m["id"]: m for m in MODELS}
@@ -143,9 +147,8 @@ class FraudTool(BaseTool):
         return str(_fraud(query))
 
 def _buyer_identity() -> str:
-    """Antseed gateway attributes quota to the buyer identity header.
-    Rotate to a fresh identity for a new quota: ANTSEED_BUYER_IDENTITY=new-name."""
-    return os.environ.get("ANTSEED_BUYER_IDENTITY", "project-agent-1")
+    """Optional gateway identity for routing and quota attribution."""
+    return os.environ.get("ANTSEED_BUYER_IDENTITY", "")
 
 def _llm(provider: str, name: str, identity: str | None = None):
     """Provider wiring. Groq/local/opencode via OpenAI-compatible endpoints, Gemini via CrewAI native provider.
@@ -243,13 +246,13 @@ def run_crew_query(query: str, mode: str = "A", threshold: float = 0.5, model: s
     from functools import partial
     ctx = None  # retrieval happens LIVE inside the crew via RetrievalTool; Python only logs scores after
     t1 = Task(description=f"Retrieve context for: {query}", expected_output="Top relevant chunks with sources and similarity scores.", agent=retriever,
-              callback=partial(_task_done, _emit, "drafting", "The record is gathered — the banker takes up the pen."))
+              callback=partial(_task_done, _emit, "drafting", "Context retrieved. Drafting banking response..."))
     sys_extra = (f"\nGUIDANCE (Mode C): if the retrieved context is insufficient, the question is ambiguous, "
                  f"out-of-scope (investment/tax/legal/medical advice), or calls for a high-stakes verdict "
                  f"(fraud yes/no, guaranteed approval), use your own judgment: it is acceptable and often correct "
                  f"to {DECLINE_GUIDANCE}. Never guess where money or safety is at stake.") if mode == "C" else ""
     t2 = Task(description=f"Answer: {query}.{sys_extra}\nUse ONLY retrieved context. Cite source files. Use eligibility/fraud tools when numbers or fraud are mentioned. Keep every answer short and direct: at most 80 words, no preamble or filler.", expected_output="Grounded answer with citations or compliant abstention.", agent=banker, context=[t1],
-              callback=partial(_task_done, _emit, "reviewing", "The draft is inked — compliance reviews the seal."))
+              callback=partial(_task_done, _emit, "reviewing", "Draft prepared. Reviewing against compliance and abstention guidelines..."))
     mode_rule = ""
     if mode == "B":
         mode_rule = (f" Mode B guidance: the retrieval step reports similarity scores. If the top similarity is below {threshold}, "
@@ -263,7 +266,7 @@ def run_crew_query(query: str, mode: str = "A", threshold: float = 0.5, model: s
     last = None
     fell_back = False  # set once we drop an unknown buyer identity
     served_by = _buyer_identity() if model.startswith("local/") else None
-    _emit("retrieving", "Consulting the sixteen houses of record…")
+    _emit("retrieving", "Querying banking policy knowledge base...")
     attempt = 0
     while attempt < 3:
         try:
@@ -275,21 +278,21 @@ def run_crew_query(query: str, mode: str = "A", threshold: float = 0.5, model: s
             if "unknown_buyer_identity" in msg and spec["provider"] == "local" and not fell_back:
                 fell_back = True
                 served_by = None  # answered as the default gateway buyer
-                _emit("retrieving", "Buyer identity unknown — retrying as the default buyer…")
+                _emit("retrieving", "Buyer identity unknown — retrying as the default buyer...")
                 llm = _llm(spec["provider"], spec["name"], identity=None)
                 for _a in (retriever, banker, compliance):
                     object.__setattr__(_a, "llm", llm)
                 attempt = 0
                 continue
             if "429" in msg or "Rate limit" in msg or "rate_limit" in msg:
-                _emit("retrieving", f"The wire is crowded — waiting before trying again ({attempt + 1}/3)…")
+                _emit("retrieving", f"Rate limit encountered — retrying ({attempt + 1}/3)...")
                 if attempt < 2:
                     _t.sleep(20 * (attempt + 1))
                     attempt += 1
                     continue
                 raise RuntimeError("RATE_LIMITED: Provider quota is exhausted. Wait a few minutes and try again.")
             if any(k in msg for k in ("500", "503", "INTERNAL", "overloaded", "UNAVAILABLE", "Timeout", "timeout")):
-                _emit("retrieving", f"The house stumbled — trying again ({attempt + 1}/3)…")
+                _emit("retrieving", f"Provider error encountered — retrying ({attempt + 1}/3)...")
                 if attempt < 2:
                     _t.sleep(15 * (attempt + 1))
                     attempt += 1
@@ -299,7 +302,7 @@ def run_crew_query(query: str, mode: str = "A", threshold: float = 0.5, model: s
     if last is None:
         raise RuntimeError("RATE_LIMITED: Provider quota is exhausted. Wait a few minutes and try again.")
     ans = last
-    _emit("sealed", "The reply is sealed.")
+    _emit("sealed", "Response completed and verified.")
     ans = clean_final(ans)
     abst = is_abstention(ans)
     # logging-only: scores for metrics, never a decision gate

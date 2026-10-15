@@ -1,7 +1,0 @@
-scope,n_pairs,b_glmFail_museOk,c_glmOk_museFail,p_exact,p_holm
-overall,100,7,9,0.8036,1.0000
-clear,20,0,1,1.0000,1.0000
-ambiguous,20,3,4,1.0000,1.0000
-out_of_scope,20,0,1,1.0000,1.0000
-high_stakes,20,2,2,1.0000,1.0000
-adversarial,20,2,1,1.0000,1.0000

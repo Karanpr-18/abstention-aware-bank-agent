@@ -1,7 +1,0 @@
-analysis,value,method
-fisher_overreach_all,0.2399,"Fisher exact [[6,11],[2,12]]"
-fisher_softref_all,0.1975,"Fisher exact [[2,15],[5,9]]"
-chi2_reason_mix,0.185,chi2 2x5
-perm_L1_20000_seed7,0.1875,permutation L1 resplit 17/14
-power_25v5_per_group,48.8,two-prop alpha.05 power.8
-power_20v10_per_group,199.0,two-prop alpha.05 power.8

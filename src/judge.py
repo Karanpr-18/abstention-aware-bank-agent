@@ -59,10 +59,9 @@ def _opencode_bin() -> str:
     found = shutil.which("opencode")
     if found:
         return found
-    for home in dict.fromkeys([str(Path.home()), "/home/karan"]):
-        cand = str(Path(home) / ".opencode" / "bin" / "opencode")
-        if Path(cand).exists():
-            return cand
+    cand = Path.home() / ".opencode" / "bin" / "opencode"
+    if cand.exists():
+        return str(cand)
     raise RuntimeError("opencode binary not found")
 
 

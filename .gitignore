@@ -1,9 +1,41 @@
+# Virtual environment
 .venv/
+venv/
+ENV/
+
+# Python cache & artifacts
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+
+# Vector DB & Environment
 chroma_db/
 .env
 logs/
+*.log
+
+# Webapp frontend dependencies & builds
 webapp/frontend/node_modules/
 webapp/frontend/dist/
+webapp/frontend/package-lock.json
+
+# Research papers, drafts, and notes (keep repository code & dataset only)
+paper/
+notes/
+analysis/
+results/
+CLAUDE.md
+check_answers.py
+check_satisfaction.py
+kb_raw/manual_downloads/
+
+# Documents and spreadsheets
+*.docx
+*.pdf
+*.xlsx
+*.csv
+
+# OS metadata
 .DS_Store
+Thumbs.db
