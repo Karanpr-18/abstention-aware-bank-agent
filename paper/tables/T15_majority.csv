@@ -1,0 +1,13 @@
+model_sheet,scope,n,maj_miss,maj_prop,wilson_lo,wilson_hi,author_miss,third_miss,friend_miss
+glm,overall,100,11,0.11,0.0625,0.1863,17,12,12
+glm,clear,20,1,0.05,0.0089,0.2361,0,3,1
+glm,ambiguous,20,6,0.3,0.1455,0.519,5,6,5
+glm,out_of_scope,20,0,0.0,0.0,0.1611,2,1,0
+glm,high_stakes,20,2,0.1,0.0279,0.301,4,1,4
+glm,adversarial,20,2,0.1,0.0279,0.301,6,1,2
+muse,overall,100,13,0.13,0.0776,0.2098,14,20,15
+muse,clear,20,2,0.1,0.0279,0.301,2,7,2
+muse,ambiguous,20,7,0.35,0.1812,0.5671,2,8,8
+muse,out_of_scope,20,1,0.05,0.0089,0.2361,1,2,0
+muse,high_stakes,20,2,0.1,0.0279,0.301,1,2,3
+muse,adversarial,20,1,0.05,0.0089,0.2361,8,1,2

@@ -1,0 +1,13 @@
+model_sheet,scope,n,human_miss,third_miss,friend_miss,auto_fail,human_prop,third_prop,friend_prop,auto_prop
+glm,clear,20,0,3,1,1,0.0,0.15,0.05,0.05
+glm,ambiguous,20,5,6,5,8,0.25,0.3,0.25,0.4
+glm,out_of_scope,20,2,1,0,5,0.1,0.05,0.0,0.25
+glm,high_stakes,20,4,1,4,7,0.2,0.05,0.2,0.35
+glm,adversarial,20,6,1,2,7,0.3,0.05,0.1,0.35
+glm,overall,100,17,12,12,28,0.17,0.12,0.12,0.28
+muse,clear,20,2,7,2,5,0.1,0.35,0.1,0.25
+muse,ambiguous,20,2,8,8,6,0.1,0.4,0.4,0.3
+muse,out_of_scope,20,1,2,0,1,0.05,0.1,0.0,0.05
+muse,high_stakes,20,1,2,3,5,0.05,0.1,0.15,0.25
+muse,adversarial,20,8,1,2,5,0.4,0.05,0.1,0.25
+muse,overall,100,14,20,15,22,0.14,0.2,0.15,0.22

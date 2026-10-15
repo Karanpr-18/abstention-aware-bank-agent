@@ -1,0 +1,14 @@
+component,value,source
+Knowledge-base files (markdown in store),64,store listing + manifest
+KB sources,public bank FAQ/policy pages (eight countries) + manual PDFs in manual downloads folder (4 PDFs),archived scrape script + manual downloads folder
+"Synthetic policy notes (defined in code, 8)",NOT indexed: 0 synthetic files in the store; Chroma store holds 1788 embeddings from 64 markdown files (collection bank_kb); 8 synthetic notes exist in archived code only and were never indexed,Chroma sqlite embeddings table (1788 rows) + store listing (64 files; 0 synthetic) + archived code (8 defined)
+Chunking,"1000 chars, overlap 200, min chunk 200 chars",archived build script
+Embeddings,all-MiniLM-L6-v2,archived build script + agent script
+Vector store,"ChromaDB persistent (persistent vector store), cosine space, collection bank_kb, fresh rebuild",archived build script
+Retrieval top-k,k=4,archived agent script + readme
+Confidence column,top-1 retrieval similarity = 1 - cosine distance; NOT model self-confidence,archived agent script; author confirm
+Simulated tools,"check_loan_eligibility (need_info/<600 deny/600-649 manual_review/<2000 deny/>10x income review) ; flag_fraud_report (case ID + escalate, never verdict)",archived tools script
+Agents,Retriever -> Banking Specialist -> Compliance Gate (CrewAI); Mode C hard-denial guidance; banker max 80 words; compliance max 40 words on decline,archived agent script
+Abstained flag,is_abstention(): opening 300 chars matched against DECLINE_PATTERNS (observational detector),archived agent script (observational detector)
+Decoding,Main runs: provider defaults (no temperature/top-p/seed set); original automated mark temperature 0; reasoning tier as xhigh model variant with per-run effort unlogged; single run per query,archived code + verified workbook (one row per query per tier)
+Labelling,"2-of-3 majority primary (author rating + classmate check + third-model check, five reasons each; majority miss = at least 2 flag; per-ID log archived); original automated mark separate; initial author rating 20 (10 per tier) + cross-check 11 = 31 author flags; no per-ID log for that step",verified workbook (author/classmate/third-model columns) + per-ID file (200 rows; no adjudication)

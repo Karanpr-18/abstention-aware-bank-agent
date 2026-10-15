@@ -1,0 +1,13 @@
+model_sheet,scope,n,agree,agree_prop,kappa
+glm,overall,100,71,0.7100,0.1826
+glm,clear,20,19,0.9500,0.0000
+glm,ambiguous,20,13,0.6500,0.2222
+glm,out_of_scope,20,15,0.7500,0.1667
+glm,high_stakes,20,11,0.5500,-0.0976
+glm,adversarial,20,13,0.6500,0.2045
+muse,overall,100,78,0.7800,0.2627
+muse,clear,20,17,0.8500,0.5000
+muse,ambiguous,20,14,0.7000,0.1176
+muse,out_of_scope,20,20,1.0000,1.0000
+muse,high_stakes,20,16,0.8000,0.2727
+muse,adversarial,20,11,0.5500,0.0000
