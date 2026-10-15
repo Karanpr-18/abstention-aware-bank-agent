@@ -1,0 +1,582 @@
+[
+  {
+    "country": "USA",
+    "bank": "Chase",
+    "topic": "mortgage_qualify",
+    "url": "https://www.chase.com/personal/mortgage/education/financing-a-home/how-to-qualify-for-a-mortgage",
+    "file": "USA_Chase_mortgage_qualify.md",
+    "chars": 7519,
+    "status": "ok"
+  },
+  {
+    "country": "USA",
+    "bank": "Chase",
+    "topic": "mortgage_docs",
+    "url": "https://www.chase.com/personal/mortgage/education/financing-a-home/mortgage-application",
+    "file": "USA_Chase_mortgage_docs.md",
+    "chars": 9283,
+    "status": "ok"
+  },
+  {
+    "country": "USA",
+    "bank": "Chase",
+    "topic": "auto_faq",
+    "url": "https://autofinance.chase.com/auto-finance/faqs",
+    "file": "USA_Chase_auto_faq.md",
+    "chars": 14489,
+    "status": "ok"
+  },
+  {
+    "country": "USA",
+    "bank": "Bank_of_America",
+    "topic": "mortgage_faq",
+    "url": "https://www.bankofamerica.com/mortgage/faqs",
+    "file": "USA_Bank_of_America_mortgage_faq.md",
+    "chars": 50555,
+    "status": "ok"
+  },
+  {
+    "country": "USA",
+    "bank": "Bank_of_America",
+    "topic": "security",
+    "url": "https://www.bankofamerica.com/security-center/overview/",
+    "file": "USA_Bank_of_America_security.md",
+    "chars": 3263,
+    "status": "ok"
+  },
+  {
+    "country": "USA",
+    "bank": "Citi",
+    "topic": "fraud_protection",
+    "url": "https://www.citi.com/tts/solutions/commercial-cards/fraud-protection",
+    "file": "USA_Citi_fraud_protection.md",
+    "chars": 12990,
+    "status": "ok"
+  },
+  {
+    "country": "USA",
+    "bank": "Citi",
+    "topic": "cards_knowledge",
+    "url": "https://www.citi.com/credit-cards/knowledge-center",
+    "file": "USA_Citi_cards_knowledge.md",
+    "chars": 54211,
+    "status": "ok"
+  },
+  {
+    "country": "China",
+    "bank": "ICBC",
+    "topic": "personal_loan",
+    "url": "https://www.icbc.com.cn/ICBC/EN/PersonalFinance/PersonalLoan/PersonalBusinessLoan",
+    "file": "China_ICBC_personal_loan.md",
+    "chars": 3094,
+    "status": "ok"
+  },
+  {
+    "country": "China",
+    "bank": "ICBC",
+    "topic": "security_column",
+    "url": "https://www.icbc.com.cn/en/column/1438058474352558360.html",
+    "file": "China_ICBC_security_column.md",
+    "chars": 4896,
+    "status": "ok"
+  },
+  {
+    "country": "China",
+    "bank": "Bank_of_China",
+    "topic": "service",
+    "url": "https://www.bankofchina.com/en/customer-service/",
+    "file": "China_Bank_of_China_service.md",
+    "chars": 746,
+    "status": "ok"
+  },
+  {
+    "country": "China",
+    "bank": "Bank_of_China",
+    "topic": "cards",
+    "url": "https://www.bankofchina.com/en/cc/",
+    "file": "China_Bank_of_China_cards.md",
+    "chars": 746,
+    "status": "ok"
+  },
+  {
+    "country": "India",
+    "bank": "SBI",
+    "topic": "personal_loan",
+    "url": "https://sbi.co.in/web/personal-banking/loans/personal-loans",
+    "file": "India_SBI_personal_loan.md",
+    "chars": 2397,
+    "status": "ok"
+  },
+  {
+    "country": "India",
+    "bank": "SBI",
+    "topic": "faq_personal_loan",
+    "url": "https://www.sbi.co.in/web/faq-s/faq-personal-loan",
+    "file": "India_SBI_faq_personal_loan.md",
+    "chars": 6190,
+    "status": "ok"
+  },
+  {
+    "country": "India",
+    "bank": "HDFC",
+    "topic": "personal_loan_eligibility",
+    "url": "https://www.hdfcbank.com/personal/borrow/popular-loans/personal-loan/eligibility",
+    "file": "India_HDFC_personal_loan_eligibility.md",
+    "chars": 3336,
+    "status": "ok"
+  },
+  {
+    "country": "India",
+    "bank": "HDFC",
+    "topic": "home_loan_faq",
+    "url": "https://homeloans.hdfc.bank.in/checklist/faqs",
+    "file": "India_HDFC_home_loan_faq.md",
+    "chars": 36359,
+    "status": "ok"
+  },
+  {
+    "country": "France",
+    "bank": "BNP_Paribas",
+    "topic": "invest_faq",
+    "url": "https://invest.bnpparibas/en/faq",
+    "file": "France_BNP_Paribas_invest_faq.md",
+    "chars": 61948,
+    "status": "ok"
+  },
+  {
+    "country": "France",
+    "bank": "BNP_Paribas",
+    "topic": "fraud_prevention",
+    "url": "https://cashmanagement.bnpparibas.com/solutions/prevention-against-fraud-cyber-risks",
+    "file": "France_BNP_Paribas_fraud_prevention.md",
+    "chars": 1136,
+    "status": "ok"
+  },
+  {
+    "country": "France",
+    "bank": "Societe_Generale",
+    "topic": "contact",
+    "url": "https://www.societegenerale.com/en/contact-us",
+    "file": "France_Societe_Generale_contact.md",
+    "chars": 5777,
+    "status": "ok"
+  },
+  {
+    "country": "France",
+    "bank": "Societe_Generale",
+    "topic": "infosec",
+    "url": "https://www.societegenerale.com/en/information-security",
+    "file": "France_Societe_Generale_infosec.md",
+    "chars": 6222,
+    "status": "ok"
+  },
+  {
+    "country": "Germany",
+    "bank": "Deutsche_Bank",
+    "topic": "personal_loan_faq",
+    "url": "https://www.deutsche.bank.in/en/loans/personal-loan-faqs.html",
+    "file": "Germany_Deutsche_Bank_personal_loan_faq.md",
+    "chars": 783,
+    "status": "ok"
+  },
+  {
+    "country": "Germany",
+    "bank": "Deutsche_Bank",
+    "topic": "security",
+    "url": "https://security.db.com",
+    "file": "Germany_Deutsche_Bank_security.md",
+    "chars": 5463,
+    "status": "ok"
+  },
+  {
+    "country": "Germany",
+    "bank": "Commerzbank",
+    "topic": "contact",
+    "url": "https://www.commerzbank.de/group/service/contact",
+    "file": "Germany_Commerzbank_contact.md",
+    "chars": 4413,
+    "status": "ok"
+  },
+  {
+    "country": "Germany",
+    "bank": "Commerzbank",
+    "topic": "security_warnings",
+    "url": "https://www.commerzbank.com/corporateclients/security-warnings",
+    "file": "Germany_Commerzbank_security_warnings.md",
+    "chars": 8644,
+    "status": "ok"
+  },
+  {
+    "country": "Switzerland",
+    "bank": "UBS",
+    "topic": "phishing_global",
+    "url": "https://www.ubs.com/global/en/our-firm/cybersafe/phishing.html",
+    "file": "Switzerland_UBS_phishing_global.md",
+    "chars": 7735,
+    "status": "ok (manual download, verified real)",
+    "fetcher": "manual"
+  },
+  {
+    "country": "Switzerland",
+    "bank": "UBS",
+    "topic": "security_digital",
+    "url": "https://www.ubs.com/ch/en/services/digital-banking/security.html",
+    "file": "Switzerland_UBS_security_digital.md",
+    "chars": 1697,
+    "status": "ok (manual download, verified real)",
+    "fetcher": "manual"
+  },
+  {
+    "country": "Spain",
+    "bank": "Santander",
+    "topic": "fraud_fight",
+    "url": "https://www.santander.com/en/press-room/press-releases/2023/07/banco-santander-bbva-and-caixabank-join-forces-to-fight-fraud",
+    "file": "Spain_Santander_fraud_fight.md",
+    "chars": 1877,
+    "status": "ok"
+  },
+  {
+    "country": "Spain",
+    "bank": "Santander",
+    "topic": "support_hub",
+    "url": "https://www.santander.co.uk/personal/support",
+    "file": "Spain_Santander_support_hub.md",
+    "chars": 1867,
+    "status": "ok"
+  },
+  {
+    "country": "Spain",
+    "bank": "BBVA",
+    "topic": "fraud_fight",
+    "url": "https://www.bbva.com/en/innovation/bbva-banco-santander-and-caixabank-join-forces-to-fight-financial-fraud",
+    "file": "Spain_BBVA_fraud_fight.md",
+    "chars": 1953,
+    "status": "ok"
+  },
+  {
+    "country": "Spain",
+    "bank": "BBVA",
+    "topic": "contact",
+    "url": "https://www.bbva.com/en/contact",
+    "file": "Spain_BBVA_contact.md",
+    "chars": 9104,
+    "status": "ok"
+  },
+  {
+    "country": "Japan",
+    "bank": "MUFG",
+    "topic": "fraud_report",
+    "url": "https://www.mufgamericas.com/report-suspicious-activity",
+    "file": "Japan_MUFG_fraud_report.md",
+    "chars": 1879,
+    "status": "ok"
+  },
+  {
+    "country": "Japan",
+    "bank": "MUFG",
+    "topic": "financial_crimes",
+    "url": "https://www.bk.mufg.jp/global/aboutus/financialcrimes.html",
+    "file": "Japan_MUFG_financial_crimes.md",
+    "chars": 9366,
+    "status": "ok"
+  },
+  {
+    "country": "Japan",
+    "bank": "MUFG",
+    "topic": "faqs",
+    "url": "https://www.mufg.jp/english/faqs/index.html",
+    "file": "Japan_MUFG_faqs.md",
+    "chars": 4115,
+    "status": "ok"
+  },
+  {
+    "country": "Japan",
+    "bank": "SMBC",
+    "topic": "security_americas",
+    "url": "https://www.smbcgroup.com/americas/Security",
+    "file": "Japan_SMBC_security_americas.md",
+    "chars": 6068,
+    "status": "ok"
+  },
+  {
+    "country": "Japan",
+    "bank": "SMBC",
+    "topic": "security_prestia",
+    "url": "https://www.smbctb.co.jp/en/service/security/",
+    "file": "Japan_SMBC_security_prestia.md",
+    "chars": 3880,
+    "status": "ok"
+  },
+  {
+    "country": "USA",
+    "bank": "Chase",
+    "topic": "policy_terms_of_use",
+    "url": "https://www.chase.com/digital/resources/terms-of-use",
+    "file": "USA_Chase_policy_terms_of_use.md",
+    "chars": 16352,
+    "status": "ok"
+  },
+  {
+    "country": "USA",
+    "bank": "Chase",
+    "topic": "policy_privacy",
+    "url": "https://www.chase.com/digital/resources/privacy-security/privacy/online-privacy-policy",
+    "file": "USA_Chase_policy_privacy.md",
+    "chars": 14525,
+    "status": "ok"
+  },
+  {
+    "country": "USA",
+    "bank": "Bank_of_America",
+    "topic": "policy_privacy",
+    "url": "https://www.bankofamerica.com/security-center/privacy-overview",
+    "file": "USA_Bank_of_America_policy_privacy.md",
+    "chars": 2405,
+    "status": "ok"
+  },
+  {
+    "country": "USA",
+    "bank": "Citi",
+    "topic": "policy_privacy_notice",
+    "url": "https://www.citi.com/policies/us-privacy-notice-for-consumers",
+    "file": "USA_Citi_policy_privacy_notice.md",
+    "chars": 35,
+    "status": "ok"
+  },
+  {
+    "country": "China",
+    "bank": "Bank_of_China",
+    "topic": "policy_ebanking_terms_uk",
+    "url": "https://www.bankofchina.com/uk/custserv/cs2/201109/t20110928_1578065.html",
+    "file": "China_Bank_of_China_policy_ebanking_terms_uk.md",
+    "chars": 14834,
+    "status": "ok"
+  },
+  {
+    "country": "China",
+    "bank": "Bank_of_China",
+    "topic": "policy_account_terms_sg",
+    "url": "https://www.bankofchina.com/sg/bocinfo/bi5/201407/t20140701_3567090.html",
+    "file": "China_Bank_of_China_policy_account_terms_sg.md",
+    "chars": 531,
+    "status": "ok"
+  },
+  {
+    "country": "India",
+    "bank": "SBI",
+    "topic": "policy_terms_of_service",
+    "url": "https://sbi.bank.in/web/customer-care/citizens-charter/general-terms-and-conditions-of-service",
+    "file": "India_SBI_policy_terms_of_service.md",
+    "chars": 1192,
+    "status": "ok"
+  },
+  {
+    "country": "India",
+    "bank": "SBI",
+    "topic": "policy_account_terms_uk",
+    "url": "https://sbiuk.statebank/general-terms-conditions",
+    "file": "India_SBI_policy_account_terms_uk.md",
+    "chars": 100817,
+    "status": "ok"
+  },
+  {
+    "country": "India",
+    "bank": "HDFC",
+    "topic": "policy_terms",
+    "url": "https://www.hdfc.bank.in/terms-and-conditions",
+    "file": "India_HDFC_policy_terms.md",
+    "chars": 60899,
+    "status": "ok"
+  },
+  {
+    "country": "India",
+    "bank": "HDFC",
+    "topic": "policy_privacy",
+    "url": "https://www.hdfc.bank.in/privacy-policy",
+    "file": "India_HDFC_policy_privacy.md",
+    "chars": 29748,
+    "status": "ok"
+  },
+  {
+    "country": "France",
+    "bank": "BNP_Paribas",
+    "topic": "policy_legal",
+    "url": "https://usa.bnpparibas/en/legal-information/",
+    "file": "France_BNP_Paribas_policy_legal.md",
+    "chars": 11027,
+    "status": "ok"
+  },
+  {
+    "country": "France",
+    "bank": "BNP_Paribas",
+    "topic": "policy_complaints",
+    "url": "https://usa.bnpparibas/en/complaints-management-policy/",
+    "file": "France_BNP_Paribas_policy_complaints.md",
+    "chars": 652,
+    "status": "ok"
+  },
+  {
+    "country": "France",
+    "bank": "Societe_Generale",
+    "topic": "policy_legal",
+    "url": "https://www.societegenerale.com/en/legal-information",
+    "file": "France_Societe_Generale_policy_legal.md",
+    "chars": 10519,
+    "status": "ok"
+  },
+  {
+    "country": "Germany",
+    "bank": "Deutsche_Bank",
+    "topic": "policy_conditions_nl",
+    "url": "https://country.db.com/netherlands/about-us/general-information-and-conditions",
+    "file": "Germany_Deutsche_Bank_policy_conditions_nl.md",
+    "chars": 7668,
+    "status": "ok"
+  },
+  {
+    "country": "Germany",
+    "bank": "Deutsche_Bank",
+    "topic": "policy_security_hub",
+    "url": "https://security.db.com/index?language_id=1",
+    "file": "Germany_Deutsche_Bank_policy_security_hub.md",
+    "chars": 5463,
+    "status": "ok"
+  },
+  {
+    "country": "Germany",
+    "bank": "Commerzbank",
+    "topic": "policy_terms",
+    "url": "https://www.commerzbank.com/corporateclients/terms",
+    "file": "Germany_Commerzbank_policy_terms.md",
+    "chars": 6326,
+    "status": "ok"
+  },
+  {
+    "country": "Spain",
+    "bank": "Santander",
+    "topic": "policy_fraud_uk",
+    "url": "https://www.santander.co.uk/personal/support/fraud-and-security",
+    "file": "Spain_Santander_policy_fraud_uk.md",
+    "chars": 1317,
+    "status": "ok"
+  },
+  {
+    "country": "Spain",
+    "bank": "Santander",
+    "topic": "policy_security_us",
+    "url": "https://www.santanderbank.com/personal/security-center",
+    "file": "Spain_Santander_policy_security_us.md",
+    "chars": 3426,
+    "status": "ok"
+  },
+  {
+    "country": "Spain",
+    "bank": "BBVA",
+    "topic": "policy_legal_notice",
+    "url": "https://shareholdersandinvestors.bbva.com/legal-notice",
+    "file": "Spain_BBVA_policy_legal_notice.md",
+    "chars": 14442,
+    "status": "ok"
+  },
+  {
+    "country": "Spain",
+    "bank": "BBVA",
+    "topic": "policy_security",
+    "url": "https://shareholdersandinvestors.bbva.com/security/",
+    "file": "Spain_BBVA_policy_security.md",
+    "chars": 1804,
+    "status": "ok"
+  },
+  {
+    "country": "Japan",
+    "bank": "MUFG",
+    "topic": "policy_terms",
+    "url": "https://www.bk.mufg.jp/global/termsandconditions/index.html",
+    "file": "Japan_MUFG_policy_terms.md",
+    "chars": 7195,
+    "status": "ok"
+  },
+  {
+    "country": "Japan",
+    "bank": "MUFG",
+    "topic": "policy_fraud_notice",
+    "url": "https://www.bk.mufg.jp/global/noticeaboutfraud/index.html",
+    "file": "Japan_MUFG_policy_fraud_notice.md",
+    "chars": 2426,
+    "status": "ok"
+  },
+  {
+    "country": "Japan",
+    "bank": "SMBC",
+    "topic": "policy_terms_global",
+    "url": "https://www.smbc.co.jp/global/terms",
+    "file": "Japan_SMBC_policy_terms_global.md",
+    "chars": 5673,
+    "status": "ok"
+  },
+  {
+    "country": "Japan",
+    "bank": "SMFG",
+    "topic": "policy_terms",
+    "url": "https://www.smfg.co.jp/english/terms/",
+    "file": "Japan_SMFG_policy_terms.md",
+    "chars": 6134,
+    "status": "ok"
+  },
+  {
+    "country": "Switzerland",
+    "bank": "UBS",
+    "topic": "policy_disclaimer",
+    "url": "https://www.ubs.com/global/en/legal/disclaimer.html",
+    "file": "Switzerland_UBS_policy_disclaimer.md",
+    "chars": 14441,
+    "status": "ok (manual download, verified real)",
+    "fetcher": "manual"
+  },
+  {
+    "country": "Switzerland",
+    "bank": "UBS",
+    "topic": "policy_cybersafe",
+    "url": "https://www.ubs.com/global/en/our-firm/cybersafe.html",
+    "file": "Switzerland_UBS_policy_cybersafe.md",
+    "chars": 874,
+    "status": "ok (manual download, verified real)",
+    "fetcher": "manual"
+  },
+  {
+    "country": "USA",
+    "bank": "Citi",
+    "topic": "policy_deposit_agreement_pdf",
+    "url": "https://online.citi.com/JRS/popups/ao/CDAA.pdf",
+    "file": "USA_Citi_policy_deposit_agreement.md",
+    "status": "ok (manual PDF)",
+    "chars": 375680
+  },
+  {
+    "country": "USA",
+    "bank": "Bank_of_America",
+    "topic": "policy_deposit_agreement_pdf",
+    "url": "https://www.bankofamerica.com/salesservices/deposits/resources/deposit-agreements",
+    "file": "USA_Bank_of_America_policy_deposit_agreement.md",
+    "status": "ok (manual PDF)",
+    "chars": 259283
+  },
+  {
+    "country": "China",
+    "bank": "ICBC",
+    "topic": "policy_business_terms_london_pdf",
+    "url": "ICBC London PDF",
+    "file": "China_ICBC_policy_business_terms_london.md",
+    "status": "ok (manual PDF)",
+    "chars": 76606
+  },
+  {
+    "country": "China",
+    "bank": "ICBC",
+    "topic": "policy_card_terms_sg_pdf",
+    "url": "ICBC Singapore PDF",
+    "file": "China_ICBC_policy_card_terms_sg.md",
+    "status": "ok (manual PDF)",
+    "chars": 11526
+  }
+]

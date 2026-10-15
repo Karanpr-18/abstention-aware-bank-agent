@@ -1,0 +1,15 @@
+chromadb>=0.6
+sentence-transformers>=3.0
+beautifulsoup4
+trafilatura
+pandas
+numpy
+tqdm
+python-dotenv
+scikit-learn
+crewai>=1.15
+crewai-tools
+crewai[google-genai]
+litellm
+pypdf
+cryptography

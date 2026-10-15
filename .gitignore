@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+chroma_db/
+.env
+logs/
+webapp/frontend/node_modules/
+webapp/frontend/dist/
+.DS_Store
