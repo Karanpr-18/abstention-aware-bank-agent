@@ -27,7 +27,6 @@ analysis/
 results/
 CLAUDE.md
 check_answers.py
-check_satisfaction.py
 kb_raw/manual_downloads/
 
 # Documents and spreadsheets
